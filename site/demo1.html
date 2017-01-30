@@ -1,0 +1,50 @@
+<html>
+<body>
+<form>
+<table align="center">
+<tr>
+<td><label for="Name">Name</label></td><td><input type="text" placeholder="Enter Full Name" required/></td>
+</tr>
+
+<tr>
+<td><label for="Email">Email</label></td><td><input type="email" title="Please enter a valid email address" placeholder="abc@example.com" required/></td>
+</tr>
+
+<tr>
+<td><label for="Gender">Gender</label></td><td><input type="radio" name="r1" required/>Male<input type="radio" name ="r1" required/>Female</td>
+</tr>
+
+<tr>
+<td><label for="dob">Date Of Birth</label></td><td><input type="date" value="01-01-2015" required/></td>
+</tr>
+
+<tr>
+<td><label for="Country">Country</label></td><td><select name="state" id="state">
+	      <option>Africa</option>
+	      <option>America</option>
+	      <option>Australia</option>
+	      <option>China</option>
+	      <option>England</option>
+	      <option>Japan</option>
+	      <option selected>India</option>
+	     </select></td>
+</tr>
+
+<tr>
+<td><label for="Phone">Phone No.</label></td><td><input type="tel" pattern="\d{10}" placeholder="Please enter a ten digit phone number" required /></td>
+</tr>
+
+<tr>
+<td><label for="pin">Pin code</label></td><td><input type="number"  min="10001" max="999999" maxlength="6" required/></td>
+</tr>
+ 
+<tr>
+<td><label for="Password">Password</label></td><td><input type="password" pattern="(?=^.{8,}$)((?=.*\d)|(?=.*\W+))(?![.\n])(?=.*[A-Z])(?=.*[a-z]).*" title="Please enter a valid password" required/></td>
+</tr>
+
+<tr>
+<td><input type="submit" value="Sign Up"/></td>
+</tr>
+</table>
+</form>
+</body></html>
